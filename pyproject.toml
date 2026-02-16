@@ -1,17 +1,15 @@
-[project]
+[tool.poetry]
 name = "projeto-cep"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Gustavo Loredo",email = "gustavoloredocosta@hotmail.com"}
-]
+authors = ["Gustavo Loredo <gustavoloredocosta@hotmail.com>"]
 readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "streamlit (>=1.54.0,<2.0.0)",
-    "requests (>=2.32.5,<3.0.0)"
-]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+streamlit = "^1.54.0"
+requests = "^2.32.5"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
